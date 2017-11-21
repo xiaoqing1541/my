@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://m.gogobids.com/address_receiv.html -->
+<html style="font-size: 100px;">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>收货信息</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="W_design" content="750">
+		<link rel="stylesheet" href="./css/public.css">
+		<link rel="stylesheet" href="./css/address.css">
+		<script src="./script/hm.js"></script>
+		<script src="./script/autoRootSize_web.min.js"></script>
+	</head>
+
+	<body class="mui-ios mui-ios-9 mui-ios-9-1" style="font-size: 12px;">
+		<div class="wrap">
+			<header class="ui-navigation">
+				<a class="icon-back mui-action-back"></a>收货信息
+				<a class="tips-r save" id="J-subBtn">保存</a>
+			</header>
+			<ul class="addr-form">
+				<li class="J-real">
+					<label>收货人</label>
+					<input type="text" placeholder="收货人姓名" id="true_name">
+				</li>
+				<li class="J-real J-mobile">
+					<label>手机号</label>
+					<input type="text" placeholder="用户物流通知" id="mobile_num">
+				</li>
+				<li class="J-qq">
+					<label>QQ</label>
+					<input type="text" placeholder="用于Q币发货" id="qq_num">
+				</li>
+				<li class="multi J-alipay">
+					<label>支付宝帐号<span>推荐填写手机号帐号</span></label>
+					<input type="text" placeholder="用于支付宝发货" id="alipay_num">
+				</li>
+				<li class="J-alipay">
+					<label>支付宝姓名</label>
+					<input type="text" placeholder="帐号对应认证真实姓名 如张三" id="alipay_name">
+				</li>
+				<li class="J-real">
+					<label>选择地区</label>
+					<div class="select ui-arr-r" id="J-city">
+						<div></div>
+					</div>
+				</li>
+				<li class="J-real">
+					<label>选择街道</label>
+					<div class="select ui-arr-r" id="J-road">
+						<div></div>
+					</div>
+				</li>
+				<li class="J-real">
+					<label>具体地址</label> <textarea placeholder="请填写具体地址" id="address_detail"></textarea>
+				</li>
+				<li class="J-other">
+					<label>其他备注</label> <textarea placeholder="填写备注" id="remark"></textarea>
+				</li>
+				<li class="J-boundMobile" style="display:none">
+					<label>绑定手机号</label>
+					<input type="text" placeholder="输入绑定手机号" id="boundMobile">
+				</li>
+				<li class="J-boundMobile" style="display:none">
+					<label>短信验证码</label>
+					<input type="text" placeholder="输入验证码" id="boundCode">
+					<a class="getcode" id="J-getCode">获取验证码</a>
+				</li>
+			</ul>
+		</div>
+		<script src="./script/public.js"></script>
+		<script src="./script/address_receiv.js"></script>
+		<div class="mui-poppicker">
+			<div class="mui-poppicker-header">
+				<button class="mui-btn mui-poppicker-btn-cancel">
+					取消
+				</button>
+				<button class="mui-btn mui-btn-blue mui-poppicker-btn-ok">
+					确定
+				</button>
+				<div class="mui-poppicker-clear"></div>
+			</div>
+			<div class="mui-poppicker-body">
+				<div class="mui-picker" style="width: 33.3333%;">
+					<div class="mui-picker-inner">
+						<div class="mui-pciker-rule mui-pciker-rule-ft"></div>
+						<ul class="mui-pciker-list" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
+							<li class="highlight" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(0deg);">
+								北京
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-15deg);">
+								天津
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-30deg);">
+								河北
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-45deg);">
+								山西
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-60deg);">
+								内蒙古
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-75deg);">
+								辽宁
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-90deg);">
+								吉林
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-105deg);">
+								黑龙江
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-120deg);">
+								上海
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-135deg);">
+								江苏
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-150deg);">
+								浙江
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-165deg);">
+								安徽
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-180deg);">
+								福建
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-195deg);">
+								江西
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-210deg);">
+								山东
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-225deg);">
+								河南
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-240deg);">
+								湖北
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-255deg);">
+								湖南
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-270deg);">
+								广东
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-285deg);">
+								广西
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-300deg);">
+								海南
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-315deg);">
+								重庆
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-330deg);">
+								四川
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-345deg);">
+								贵州
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-360deg);">
+								云南
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-375deg);">
+								西藏
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-390deg);">
+								陕西
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-405deg);">
+								甘肃
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-420deg);">
+								青海
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-435deg);">
+								宁夏
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-450deg);">
+								新疆
+							</li>
+						</ul>
+						<div class="mui-pciker-rule mui-pciker-rule-bg"></div>
+					</div>
+				</div>
+				<div class="mui-picker" style="width: 33.3333%;">
+					<div class="mui-picker-inner">
+						<div class="mui-pciker-rule mui-pciker-rule-ft"></div>
+						<ul class="mui-pciker-list" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
+							<li class="highlight" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(0deg);">
+								北京市
+							</li>
+						</ul>
+						<div class="mui-pciker-rule mui-pciker-rule-bg"></div>
+					</div>
+				</div>
+				<div class="mui-picker" style="width: 33.3333%;">
+					<div class="mui-picker-inner">
+						<div class="mui-pciker-rule mui-pciker-rule-ft"></div>
+						<ul class="mui-pciker-list" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
+							<li class="highlight" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(0deg);">
+								东城
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-15deg);">
+								西城
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-30deg);">
+								朝阳
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-45deg);">
+								丰台
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-60deg);">
+								石景山
+							</li>
+							<li class="visible" style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-75deg);">
+								海淀
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-90deg);">
+								门头沟
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-105deg);">
+								房山
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-120deg);">
+								通州
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-135deg);">
+								顺义
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-150deg);">
+								昌平
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-165deg);">
+								大兴
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-180deg);">
+								怀柔
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-195deg);">
+								平谷
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-210deg);">
+								密云
+							</li>
+							<li style="transform-origin: center center -189.5px; transform: translateZ(189.5px) rotateX(-225deg);">
+								延庆
+							</li>
+						</ul>
+						<div class="mui-pciker-rule mui-pciker-rule-bg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mui-poppicker">
+			<div class="mui-poppicker-header">
+				<button class="mui-btn mui-poppicker-btn-cancel">
+					取消
+				</button>
+				<button class="mui-btn mui-btn-blue mui-poppicker-btn-ok">
+					确定
+				</button>
+				<div class="mui-poppicker-clear"></div>
+			</div>
+			<div class="mui-poppicker-body">
+				<div class="mui-picker" style="width: 100%;">
+					<div class="mui-picker-inner">
+						<div class="mui-pciker-rule mui-pciker-rule-ft"></div>
+						<ul class="mui-pciker-list"></ul>
+						<div class="mui-pciker-rule mui-pciker-rule-bg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

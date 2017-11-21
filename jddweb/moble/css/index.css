@@ -1,0 +1,97 @@
+
+.banner{
+	margin: auto;
+	text-align: center;
+}
+.banner img{
+	max-width: 100%;
+	height: auto;
+}
+nav{
+	width: 100%;
+	height: 16vw;
+	line-height: 16vw;
+	font-size: 1.2em;
+}
+.navLeft{
+	float: left;
+	width: 40vw;
+	text-align: center;
+}
+.navLeft img{
+	width: 8vw;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 2vw;
+}
+.navRight{
+	float: right;
+	width: 40vw;
+	text-align: center;
+}
+.navRight img{
+	width: 8vw;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 2vw;
+}
+.navMid{
+	height: 12vw;
+	margin-top: 2vw;
+	float: left;
+	width: 1px;
+	margin-left: 7.8vw;
+	margin-right: 7.8vw;
+	background-color: #b1b1b1;
+}
+.line{
+	background-color: #ececec;
+	height: 3vw;
+	width: 100%;
+}
+.japp{
+	margin: 4vw auto;
+	text-align: center;
+}
+.japp h1{
+	color: #00a4ff;
+	font-size: 1.6em;
+	margin-bottom: 2vw;
+}
+.japp span{
+	display: block;
+	color: #acacac;
+	font-size: 1.2em;
+	padding-top: 0.2vw;
+}
+.japp p img{
+	width: 70vw;
+	height: auto;
+	margin-top: 3vw;
+}
+.nowdown{
+	width: 100%;
+	height: 146vw;
+	background:url(../image/comcode.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.nowdown img{
+	width: 41vw;
+    height: auto;
+    position: relative;
+    top: 27vw;
+    left: 67vw;
+}
+.cooperate{
+	margin: auto;
+	text-align: center;
+}
+.ctitle img{
+	width: 50vw;
+	margin-top: 4vw;
+	height: auto;
+}
+.cinfo img{
+	max-width: 100%;
+	height: auto;
+}

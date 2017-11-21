@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection" /> 
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<body>
+		<div class="main">
+			<header>
+				<span class="myId">ID:200818</span>
+				<span>金币：<span class="jinb">0.00</span></span>
+				<a href="" class="recharge">充值</a>
+				<a href="" class="exchange">兑换</a>
+				<a href="" class="complaints">投诉</a>
+			</header>
+			<div class="myinfo">
+				<div class="lilist">
+					<span class="active">小圈</span>
+					<span>中圈</span>
+					<span>大圈</span>
+				</div>
+				<div class="Prince">
+					
+				</div>
+				<div class="notice">
+					<li>恭喜会员[192321]在10金币区抢得50金币！</li>
+					<li>恭喜会员[298212]在5金币区抢得10金币！</li>
+					<li>恭喜会员[136103]在30金币区抢得150金币！</li>
+					<li>恭喜会员[128851]在2金币区抢得20金币！</li>
+					<li>恭喜会员[13578]在2金币区抢得18金币！</li>
+					<li>恭喜会员[139367]在10金币区抢得80金币！</li>
+				</div>
+				<div class="mydollar">
+					<li>
+						<span class="active">2金币</span>
+						<span>5金币</span>
+						<span>10金币</span>
+						<span>30金币</span>
+					</li>
+					<li>
+						<span>100金币</span>
+						<span>300金币</span>
+						<span>1000金币</span>
+						<span>2000金币</span>
+					</li>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.lilist span').click(function(){
+				$('.lilist span').removeClass('active');
+				$(this).addClass('active');
+				var index = $(this).index();
+				if(index==0){
+					
+				 }
+			});
+			$('.mydollar li span').click(function(){
+				$('.mydollar li span').removeClass('active');
+				$(this).addClass('active');
+			});
+		</script>
+	</body>
+</html>

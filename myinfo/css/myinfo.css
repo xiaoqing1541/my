@@ -1,0 +1,257 @@
+.main{
+	margin: 50px auto;
+	width: 1100px;
+}
+.title{
+	border-bottom: 1px solid #e7edf1;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.mytab{
+	margin-top: 30px;
+	border-bottom: 1px solid #e7edf1;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+
+}
+.mytablist{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	color: #30a5ff;
+	transition: 0.3s;
+	
+}
+.mytab span.active{
+	border-top: 1px solid #e7edf1;
+	border-left: 1px solid #e7edf1;
+	border-right: 1px solid #e7edf1;
+	background-color: white;
+	color: #373635;
+}
+.tab_child{
+	display: none;
+}
+.phonenum{
+	margin-top: 10px;
+	border: 1px solid #e7edf1;
+	padding: 4px;
+}
+textarea{
+	border: none;
+	resize: none;
+}
+.num{
+	width: 99%;
+}
+.tips{
+	border-top: 1px solid #e7edf1;
+	font-size: 12px;
+}
+.tips span{
+	color: #ff0708;
+}
+.little{
+	font-size: 14px;
+}
+.editinfo{
+	margin: 30px auto;
+	clear: both;
+}
+.cashloan{
+	float: left;
+	border:1px solid #e7edf1;
+	width: 500px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+.sign{
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.blue{
+	padding: 3px;
+	background-color: #30a5ff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: white;
+}
+.mesgInfo{
+	border: 1px solid #e7edf1;
+	width: 450px;
+	height: 300px;
+	margin: 15px auto;
+	position: relative;
+}
+.mymesg{
+	width:350px ;
+	height: 220px;
+}
+.exit{
+	font-size: 12px;
+    position: absolute;
+    right: 26px;
+    bottom: 80px;
+    
+}
+.settime{
+	position: relative;
+	left: 20px;
+
+}
+.exit:before,.settime:before{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #e7edf1;
+	position: absolute;
+	left: -14px;
+	top: 2px;
+}
+ 
+.checked.exit:before,.checked.settime:before{
+	background-image: url(../img/right.png) ;
+	background-size: 10px 10px;
+	-webkit-background-size: 10px 10px;
+	-moz-background-size: 10px 10px;
+	-o-background-size: 10px 10px
+}
+.mesgtips{
+	border-top:1px solid #e7edf1;
+}
+.red{
+	color: #ff0708;
+}
+.backoff{
+	background-color: #e7e5e9;
+	margin-left: 60px;
+	border-radius:5px ;
+	-webkit-border-radius:5px ;
+	-moz-border-radius:5px ;
+	-o-border-radius:5px ;
+	height: 30px;
+	line-height: 30px;
+	width: 360px;
+	margin-bottom: 10px;
+}
+.templates{
+	float:right;
+	border:1px solid #e7edf1;
+	width: 500px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+.mytemplates{
+	margin-top: 3px;
+	border-bottom: 1px solid #e7edf1;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	width: 450px;
+    margin-left: 25px;
+
+}
+.mytatemplist{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: #30a5ff;
+	transition: 0.3s;
+	
+}
+.mytatemplist.active{
+	border-top: 1px solid #e7edf1;
+	border-left: 1px solid #e7edf1;
+	border-right: 1px solid #e7edf1;
+	background-color: white;
+	color: #373635;
+}
+table,td,th {
+	border: 1px solid #e7edf1;
+	cursor: pointer;
+    border-collapse: collapse;  
+		}
+		
+th,td {
+	padding: 4px 5px;
+}
+.use{
+	color: #30a5ff;
+}
+.templatesBody{
+	display: none;
+}
+table{
+	width: 472px;
+}
+.settimeF{
+	margin-top: 450px;
+	border-bottom: 1px solid #e7edf1;
+}
+.footer{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.send{
+	display: inline-block;
+	padding: 3px 15px;
+	background-color: #30a5ff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	color: white;
+	font-size: 12px;
+	margin-left: 360px;
+}
+.file {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    background: #30a5ff;
+    /*border: 1px solid #99D3F5;*/
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    text-decoration: none;
+}
+.mystyle{
+	float: right;
+	margin-top: 10px;
+}
+.myblue{
+	color: #30a5ff;
+}
+.mytext{
+	margin-top: 20px;
+	height: 119px;
+	border: 1px solid #e7edf1;
+}
+.mytextarea{
+	background-color: #eff1f5;
+	width: 1096px;
+	height: 80px;
+}

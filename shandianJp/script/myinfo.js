@@ -1,0 +1,1 @@
+mui.ready(function(){doc.querySelector(".avatar img").src=_user.avatar,doc.querySelector("#J-nickname .tips").innerHTML=_user.nickname,doc.querySelector("#J-mobile .tips").innerHTML=_user.mobile_num||"未绑定"});

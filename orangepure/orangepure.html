@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		﻿<title>橙子钱包</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<style type="text/css">
+			html,body{
+			height: 100%;
+			background-color: #da252e;
+			}
+			.main{
+				margin: auto;
+				text-align: center;
+				font-family: "微软雅黑";
+				width: 100%;
+				height: 100%;
+				/*position: relative;
+				top: -5vw;*/
+				background: url(img/bg.png) no-repeat;
+				background-size: 100% 100%;
+				-webkit-background-size: 100% 100%;
+				position: relative;
+			}
+			@media only screen and (min-width: 320px) and (max-width:374px) {
+				.main{
+				    top: -7vw;
+			}
+			}
+			
+			.myform{
+				box-shadow:0 6px 6px #c22b34; /*底边阴影*/  
+				width: 88vw;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				background: #fff;
+				margin: auto;
+				position: absolute;
+				left:6vw;
+				bottom: 16vw;
+				text-align: center;
+				padding-top: 2vw;
+				padding-bottom: 0vw;
+				overflow: auto;
+				
+			}
+			
+			.title{
+				width: 76vw;
+				margin: auto;
+				text-align: center;
+				font-weight: 700;
+				color: #302e2e;
+				height: 10vw;
+				line-height:10vw;
+				border-bottom: 1px solid #9f9f9f;
+			}
+			input:focus{
+			outline:0 !important;
+			}
+		   input{ 
+			border: none;
+			box-shadow:none;
+			-webkit-appearance: none;
+			   }
+			.myname{
+				background-color: #edf7ff;
+				width: 76vw;
+				height: 10vw;
+				line-height:10vw;
+				margin-top: 2vw;
+				border-radius: 5px;
+				padding-left: 2vw;
+				-webkit-border-radius: 5px;
+			}
+			.btn{
+				width:80vw;
+				margin:auto;
+				margin-top: 4vw;
+			}
+			.btn img{
+			    width: 80vw;
+				height: auto;
+				margin-left: 2.7vw;
+			}
+			.mark{
+				display: none;
+				width: 46vw;
+			    height: 10vw;
+			    line-height: 10vw;
+			    position: absolute;
+			    bottom: 28vw;
+			    left: 27vw;
+			    border-radius: 5px;
+			    text-align: center;
+			    background-color: #3c3c3c;
+			    color: white;
+			    -webkit-border-radius: 5px;
+			}
+			.incode{
+				background-color: #edf7ff;
+				width: 34vw;
+				height: 10vw;
+				line-height:10vw;
+				margin-top: 2vw;
+				border-radius: 5px;
+				padding-left: 2vw;
+				-webkit-border-radius: 5px;
+			}
+			.getcode{
+				border: 1px solid #c2c2c2;
+				width: 38vw;
+				height: 10vw;
+				line-height:10vw;
+				margin-top: 2vw;
+				text-align: center;
+				border-radius: 5px;
+				padding-left: 2vw;
+				-webkit-border-radius: 5px;
+			}
+			/*pc端*/
+			@media only screen and (min-width: 650px) and (max-width: 1920px) {
+				html,body{
+			background-color: #fff;
+		
+			}
+				.main{
+				margin:56px auto;
+				text-align: center;
+				font-family: "微软雅黑";
+				width: 650px;
+				height: 880px;
+				background: url(img/bg.png) no-repeat;
+				background-size: 100% 100%;
+				-webkit-background-size: 100% 100%;
+				position: relative;
+			    }
+			    .myform{
+				box-shadow:0 6px 6px #edf7ff; /*底边阴影*/  
+				width: 550px;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				background: #fff;
+				margin: auto;
+				position: absolute;
+				left:50px;
+				bottom: 105px;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 0px;
+				overflow: auto;
+				
+			}
+			
+			.title{
+				font-weight: 700;
+				width: 500px;
+				margin: auto;
+				text-align: center;
+				color: #302e2e;
+				height: 36px;
+				line-height:36px;
+				border-bottom: 1px solid #9f9f9f;
+			}
+			input:focus{
+			outline:0 !important;
+			}
+		   input{ 
+			border: none;
+			box-shadow:none;
+			-webkit-appearance: none;
+			   }
+			.myname{
+				background-color: #edf7ff;
+				width: 500px;
+				height: 36px;
+				line-height:36px;
+				margin-top: 30px;
+				border-radius: 5px;
+				padding-left: 6px;
+				-webkit-border-radius: 5px;
+			}
+			.btn{
+				width:500px;
+				margin:auto;
+				margin-top: 30px;
+			}
+			.btn img{
+			    width: 500px;
+				height: auto;
+				margin-left: 10px;
+			}
+			.mark{
+				display: none;
+				width: 250px;
+			    height: 36px;
+			    line-height: 36px;
+			    position: absolute;
+			    bottom: 300px;
+			    left: 200px;
+			    border-radius: 5px;
+			    text-align: center;
+			    background-color: #3c3c3c;
+			    color: white;
+			    -webkit-border-radius: 5px;
+			}
+			.incode{
+				background-color: #edf7ff;
+				width: 276px;
+				height: 36px;
+			    line-height: 36px;
+				margin-top: 10px;
+				border-radius: 5px;
+				padding-left:10px;
+				-webkit-border-radius: 5px;
+			}
+			.getcode{
+				border: 1px solid #c2c2c2;
+				width: 200px;
+				 height: 36px;
+			    line-height: 36px;
+				margin-top: 10px;
+				text-align: center;
+				border-radius: 5px;
+				padding-left: 10px;
+				-webkit-border-radius: 5px;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="myform">
+			<!--	<p class="title">代理申请表</p>-->
+				<p ><input  class="myname" type="text" name="" id="num" placeholder="请输入手机号" /></p>
+				<p >
+					<input type="text" placeholder="请输入验证码" class="incode" />
+					<input type="text" readonly="readonly" value="获取验证码" class="getcode"/>
+				</p>
+				<p ><input  class="myname" type="password" name="" id="setpas" placeholder="请设置密码" /></p>
+				<p ><input  class="myname" type="password" name="" id="getpas" placeholder="请再次输入密码" /></p>
+			    <p class="btn"><img src="img/apply.png"/></p>
+			</div>
+			<div class="mark">
+				提交成功！
+			</div>
+		</div>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//	  	获取验证码
+		var countdown=120; 
+		function settime(val) { 
+		if (countdown == 0) { 
+		val.removeAttribute("disabled");    
+		val.value="获取验证码"; 
+		countdown=120;
+		return ;
+		} else {
+		
+		val.setAttribute("disabled", true); 
+		val.style['background-color']="#fff";
+		val.value=countdown + "s后重发"; 
+		countdown--; 
+		} 
+		setTimeout(function() { 
+		settime(val) 
+		},1000) 
+		} ;
+		$('.getcode').bind('click',function(){
+			 var num=$("#num").val();
+			 if(!num){
+                    	layer.open({
+						    content: '手机号不能为空'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            if(!(/^1[3|5|8|7][0-9]{9}$/.test(num))){
+                    	layer.open({
+						    content: '手机格式不正确'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            settime(this);
+		});
+		 $('.btn').bind("click", function() {
+            var num=$("#num").val();
+            var incode=$(".incode").val();
+            var setpas =$('#setpas').val();
+            var getpas =$('#getpas').val();
+			 if(!num){
+                    	layer.open({
+						    content: '手机号不能为空'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            if(!(/^1[3|5|8|7][0-9]{9}$/.test(num))){
+                    	layer.open({
+						    content: '手机格式不正确'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            if(!incode){
+                    	layer.open({
+						    content: '验证码不能为空'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            if(!setpas){
+                    	layer.open({
+						    content: '请设置密码'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            if(!getpas){
+                    	layer.open({
+						    content: '请再次输入密码'
+						    ,skin: 'msg'
+						    ,time: 2 
+						  });
+                    	return false;
+                    }
+            $('.mark').show();
+				setTimeout(function(){
+				$('.mark').hide();
+			},1000)
+             });
+
+		</script>
+	</body>
+</html>

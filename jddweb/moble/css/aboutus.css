@@ -1,0 +1,55 @@
+.banner{
+	margin: auto;
+	text-align: center;
+}
+.banner img{
+	max-width: 100%;
+	height: auto;
+}
+.introuce{
+	background-color: #fff;
+	width: 92vw;
+	padding-bottom: 8vw;
+	padding-top: 6vw;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: -14vw;
+}
+.introuce_info{
+	margin-left: 3vw;
+	text-align: left;
+}
+.introuce_info h1{
+	font-size: 1.6em;
+	margin-bottom: 6vw;
+}
+.introuce_info p{
+	font-size: 1.2em;
+}
+.info{
+	text-align: left;
+	margin: auto;
+	margin-left: 5vw;
+	position: relative;
+    top: -6vw;
+}
+.info h1{
+	font-size: 1.6em;
+	margin-bottom: 2vw;
+}
+.info p{
+	font-size: 1.0em;
+	color: #acacac;
+}
+.infoImg{
+	margin: auto;
+	text-align: center;
+}
+.infoImg img{
+	max-width: 90vw;
+	height: auto;
+}
+.mTop{
+	margin-top: 18vw;
+}

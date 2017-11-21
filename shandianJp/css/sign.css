@@ -1,0 +1,345 @@
+body{background:#ff4c4c}
+.day_list{
+	display:block;
+	font-size:0;
+	background:#fff;
+	padding:0 .25rem;
+	position:relative;
+	z-index:3;
+	margin-bottom:-.02rem;
+	height:4.4rem}
+.day_list em:before,.day_list em:after{
+	content:"";
+	position:absolute;
+	left:50%;
+	display:block;
+	height:1.2rem;
+	width:1.2rem;
+	margin:-.1rem 0 0 -.6rem;
+	background:url(https://static.gogobids.com/images/activity/sign/icons.png) 0 0;
+	background-size:2.4rem 2rem}
+.day_list em:after{display:none}
+.day_list p{
+	position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:.45rem;
+    line-height:.47rem;
+    background:#f0f0f0;
+    border-top:solid 1px #ccc
+    }
+.day_list li{
+	display:inline-block;
+	vertical-align:top;
+	width:1.55rem;
+	margin:.2rem .1rem 0;
+	border:solid 1px #ccc;
+	border-radius:.1rem;
+	font-size:.24rem;
+	color:#999;
+	text-align:center;
+	height:2rem;
+	line-height:.47rem;
+	position:relative;
+	overflow:hidden
+	}
+
+.day_list li:last-child{width:3.3rem}
+.day_list li:last-child em:before{
+	-webkit-transform:scale(0.7);
+	transform:scale(0.7);
+	margin-left:-1.1rem
+	}
+.day_list li:last-child em:after{
+	margin:-.1rem 0 0  -.4rem;
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+	display:block
+	}
+
+.day_list li.cur{
+	border-color:#EF1544;
+    background:#fff5f5;color:#EF1544
+    }
+.day_list li.cur p{
+	background:#ffc9c9;
+	border-color:#EF1544
+	}
+.day_list li.ed:after{
+	content:"";
+	display:block;
+	width:.6rem;
+	height:.6rem;
+	background:url(https://static.gogobids.com/images/activity/sign/icons.png) -1.2rem 0;
+	background-size:2.4rem 2rem;
+	position:absolute;
+	right:0;top:0.9rem}
+.day_list li.ed em:before,.day_list li.ed em:after{opacity:.5}
+.btn_wrap{
+	background:#fff;
+	overflow:hidden;
+	position:relative;
+	margin-bottom:-.02rem
+	}
+.btn_wrap .rule{
+	position:absolute;
+	background:#f2f2f2;
+	color:#EF1544;
+	right:0;
+	top:.32rem;
+	height:.55rem;
+	line-height:.55rem;
+	padding:0 .2rem;
+	border-radius:.28rem 0 0 .28rem;
+	border:solid 1px #ccc
+	}
+
+.btn{display:block;
+position:relative;
+height:.8rem;
+line-height:.82rem;
+border-bottom:solid .05rem #be0029;
+width:3.3rem;
+text-align:center;
+border-radius:.4rem;
+color:#fff;
+font-size:.32rem;
+margin:.2rem auto .3rem;
+background:-webkit-linear-gradient(top, #FFB5B5 0%, #EF1544 20%, #C80A33 75%, #FF7D7D 100%);
+background:linear-gradient(top, #FFB5B5 0%, #EF1544 20%, #C80A33 75%, #FF7D7D 100%)}
+.btn:before,.btn:after{
+	content:"";
+	display:block;
+	width:.1rem;
+	height:.08rem;
+	background:#fff;
+	position:absolute;
+	left:.35rem;
+	top:.05rem;
+	border-radius:50%
+	}
+
+.btn:after{
+	width:2rem;
+	left:.55rem;
+	border-radius:0;
+	background:#fff;
+	background:-webkit-linear-gradient(left, #fff 0%, rgba(255,255,255,0) 100%);
+	background:linear-gradient(left, #fff 0%, rgba(255,255,255,0) 100%)
+	}
+
+.btn i{position:relative;top:-.1rem}
+.btn.dis{opacity:.7}
+.timeline{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+	padding:.1rem .2rem;
+	text-align:center;
+	line-height:.27rem;
+	height:1.25rem;
+	background:#fff;
+	position:relative;
+	font-size:.24rem;
+	}
+
+.timeline:before{
+	position:absolute;
+	content:"";
+	display:block;
+	width:91%;
+	height:.05rem;
+	left:9%;
+	top:50%;
+	margin-top:.12rem;
+	background:#e7e7e7;
+	z-index:1
+}
+.timeline:after{
+	position:absolute;
+	content:"";
+	display:block;
+	height:.05rem;
+	left:0;
+	top:50%;
+	width:9%;
+	margin-top:.12rem;
+	background:#e7e7e7;
+	z-index:1
+
+}
+.timeline li{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	flex:1;
+	color:#999;
+	}
+
+.timeline li:after{
+	content:"";
+	display:block;
+	width:.3rem;
+	height:.3rem;
+	margin:.25rem auto;
+	border-radius:50%;
+	background:#e7e7e7;
+	position:relative;
+	z-index:3
+	}
+
+.timeline li.box:after{
+	width:.8rem;
+	height:.8rem;
+	margin:0 auto;
+	border-radius:0;
+	background:url(https://static.gogobids.com/images/activity/sign/icons.png) 0 -1.2rem !important;
+	background-size:2.4rem 2rem !important
+	}
+
+.timeline li.box2:after{
+	background-position:-.8rem -1.2rem !important;
+	-webkit-animation:prom 1s infinite;
+	animation:prom 1s infinite
+	}
+
+.timeline li.box3:after{
+	background-position:-1.6rem -1.2rem !important
+	}
+
+.timeline.oneday:after{
+	background:#EF1544}
+
+.timeline.oneday li:first-child:after{background:#EF1544}
+.box_wrap{position:relative;padding:.25rem 0 .01rem;color:#fff;text-align:center}
+.box_wrap h3 p{font-size:.32rem}
+.box_wrap h3 i{display:inline-block;
+position:relative;
+vertical-align:text-bottom;
+margin:0 .15rem;
+width:.75rem;
+height:.7rem;
+border-radius:.05rem;
+overflow:hidden;
+background:#fff;
+text-align:center;
+line-height:.97rem;
+color:#333}
+.box_wrap h3 i:before{
+	content:"";
+	height:.2rem;
+	width:100%;
+	position:absolute;
+	left:0;top:0;
+	background:#EF1544}
+
+.box_wrap h3 i:after{
+	content:"";
+	height:.02rem;
+	width:30%;
+	position:absolute;
+	left:35%;
+	top:.12rem;
+	background:#fff
+	}
+
+.box_wrap em{color:#ffe349}
+.box_wrap .box{width:5.38rem;
+height:2.78rem;
+display:block;
+margin:0 auto;
+background:url(https://static.gogobids.com/images/activity/sign/box_1.png);
+background-size:100% 100%}
+.box_wrap .box.box2{background-image:url(https://static.gogobids.com/images/activity/sign/box_2.png)}
+.box_wrap .box.box3{background-image:url(https://static.gogobids.com/images/activity/sign/box_3.png)}
+.box_wrap:before{content:"";
+display:block;
+position:absolute;
+left:50%;
+top:-.02rem;
+margin-left:-.18rem;
+width:0;
+height:0;
+border:solid 0 transparent;
+border-width:.2rem .18rem 0;
+border-top-color:#fff
+}
+.ui-block{margin-bottom:.3rem}
+.ui-block .icon{
+	height:.5rem;
+	width:.5rem;
+	float:left;
+	margin:.15rem;
+	background:url(https://static.gogobids.com/images/activity/sign/icons.png) -1.2rem -0.6rem;
+	background-size:2.4rem 2rem}
+
+.pop_prize{
+	position:fixed;
+	left:0;
+	width:7.5rem;
+	top:0;
+	bottom:0;
+	z-index:99;
+	background:url(https://static.gogobids.com/images/activity/sign/prize.png) rgba(0,0,0,0.5) 50% 1.5rem no-repeat;
+	background-size:6.4rem 5.7rem;
+	text-align:center;
+	overflow:hidden;
+	display:none
+	}
+
+.pop_prize .type{
+	margin-top:3.45rem;
+	color:#EF1544;
+	line-height:.48rem
+	}
+
+.pop_prize .nums{
+	font-style:italic;
+	color:#e59e4d;
+	font-size:1.5rem;
+	line-height:1;
+	position:relative;
+	top:-.1rem
+	}
+
+.pop_prize .nums.symbol:before{
+	position:absolute;
+	content:"￥";
+	margin:.2rem 0 0 -.25rem;
+	font-size:.28rem;
+	font-style:normal
+	}
+
+.pop_prize .tips{
+	color:#fff;
+	font-size:.32rem;
+	margin-top:1.8rem
+	}
+
+.pop_prize em{color:#ffef4f}
+.pop_prize.hide{
+	-webkit-animation:hide .3s;
+	animation:hide .3s;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards}
+
+@-webkit-keyframes hide{
+	0%{opacity:1;left:0}
+	99%{opacity:0;left:0}
+	100%{opacity:0;left:200%}
+	}
+
+@keyframes hide{
+	0%{opacity:1;left:0}
+	99%{opacity:0;left:0}
+	100%{opacity:0;left:200%}
+	}
+
+@-webkit-keyframes prom{
+	0%{-webkit-transform:scale(1.3);transform:scale(1.3)}
+	50%{-webkit-transform:scale(1);transform:scale(1)}
+	100%{-webkit-transform:scale(1.3);transform:scale(1.3)}}
+
+@keyframes prom{0%{-webkit-transform:scale(1.3);transform:scale(1.3)}
+50%{-webkit-transform:scale(1);transform:scale(1)}
+100%{-webkit-transform:scale(1.3);transform:scale(1.3)}}

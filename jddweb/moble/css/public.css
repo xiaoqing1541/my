@@ -1,0 +1,52 @@
+html,body{
+	height: 100%;
+}
+.main{
+	width: 100%;
+	background-color: #f2f2f2;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+header{
+	width:100%;
+	background-color: #fefefe;
+	height: 14vw;
+	line-height: 14vw;
+	font-size: 1.2em;
+	box-shadow:0 3px 3px #eaeaea; /*底边阴影*/  
+}
+.logo{
+	margin-left: 5vw;
+	margin-right: 2vw;
+}
+.logo img{
+	width: 26vw;
+	height: auto;
+	vertical-align: middle;
+}
+footer{
+	background-color: #434c52;
+	width: 100%;
+	padding-bottom: 10vw;
+	padding-top: 5vw;
+	color: white;
+	font-size: 1.2em;
+	
+}
+.foot{
+	white-space: nowrap;
+	position: relative;
+}
+footer span{
+	display: inline-block;
+}
+.fleft{
+	margin-left: 2vw;
+}
+.fcode img{
+	width: 50vw;
+	height: auto;
+	position: absolute;
+	right: 2vw;
+	top: 0vw;
+}

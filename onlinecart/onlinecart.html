@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection" /> 
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<title>在线申请信用贷款</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/onlinecart.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/banner.png"/>
+		</header>
+		<div class="top">
+			<p><span class="blue">最快</span>5分钟到账</p>
+			<p class="top_mid"><span class="red">最高</span>500万现金</p>
+			<p class="top_right"><span class="green">最长</span>48个期限</p>
+		</div>
+		<div class="line"></div>
+		<p class="title"><img src="img/tios.png"/></p>
+		<div class="form">
+			<div class="name">
+				<input type="text"  placeholder="中文姓名" class="username" />
+				<p class="seximg">
+					<span class="femail"><img src="img/nv11.png "  _src="img/nv1.png" dir="1" class="img-click active" /></span>
+					<span class="mail"><img src="img/nv2.png"  _src="img/nv2.png" dir="2" class="img-click"/></span>
+				</p>
+			</div>
+			<p><input type="number" placeholder="您的手机号" class="num"/></p>
+			<p class="code">
+				<input type="text" placeholder="短信验证码"  class="infoCode"/>
+				<input type="text"  readonly="readonly" value="获取验证码" class="getCode">
+			</p>
+		</div>
+		<div class="info">
+			<p >
+				<span>寿险保单</span>
+				<span>
+					<a class="all-vip checked">有</a>
+					<a class="all-vip  all_right">无</a>
+				</span>
+			</p>
+           <div class="creditInfo">
+           	<span>信用情况</span>
+           	<span class="creditInfo_r">
+           		<p><a class="cartvip checked" style="top: -4vw;">有信用卡或贷款信用良好</a></p>
+           		<p><a class="cartvip" style="top: -2vw;">有信用卡或贷款少数逾期</a></p>
+           		<p><a class="cartvip">无信用卡无贷款</a></p>
+           	</span>
+           </div>
+		</div>
+	   <p class="appaly">立刻点击申请</p>
+	   <p class="radio" style="margin-top: 3vw;">
+			<a class="agree checked">同意《隐私条款》并申请信用贷款</a>
+		</p>
+		<p  class="gift" style="margin-top: 2vw;">
+			<a  class="apply_vip checked">申请有礼：送100万意外险，平安出行</a>
+		</p>
+		<div class="promise">
+
+           <p>
+			平台郑重承若：<span class="promise_info">所有贷款申请未成功放款之前绝不收取任何费用，为保障您的资金安全，请不要相信任何要求您支付费用的信息，邮件电话等不实信息</span>
+	
+            </p>
+
+		</div>
+		    <div class="commImg">
+			<img src="img/motit.png"/>
+		     </div>
+		      <div class="commImg2">
+			<img src="img/mo.png"/>
+		     </div>
+		       <div class="commImg3">
+			<img src="img/case.png"/>
+		     </div>
+		      <div class="commImg2">
+			<img src="img/caset.png"/>
+		     </div>
+	</body>
+	<script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript">
+ 	$('.all-vip').click(function(){
+ 	$('.all-vip').removeClass('checked');
+	      $(this).addClass('checked');
+	   });
+ 	$('.cartvip').click(function(){
+ 	$('.cartvip').removeClass('checked');
+	      $(this).addClass('checked');
+	   });
+ 	$('.cartvip').click(function(){
+ 	$('.cartvip').removeClass('checked');
+	      $(this).addClass('checked');
+	   });
+ 	$('.agree').click(function(){
+ 	  $(this).toggleClass('checked');
+	   });
+ 	$('.apply_vip').click(function(){
+ 	  $(this).toggleClass('checked');
+	   });
+	  
+ </script>
+ <script type="text/javascript">
+
+			$(function(){
+				$('.img-click').click(function(){
+					var _src = $('.img-click.active').attr('_src');
+					$('.img-click.active').attr('src',_src);
+					$('.img-click').removeClass('active');
+					var bath ='img/nv';
+					var active = $(this).hasClass('active');
+					var dir = $(this).attr('dir');
+					if(!active){
+					   dir = dir+dir;	
+					   $(this).attr('src',bath+dir+'.png');
+					   $(this).addClass('active');
+					}else{
+						$(this).attr('src',bath+dir+'.png');
+					    $(this).removeClass('active');
+
+					}
+				})
+			});
+
+ </script>
+</html>

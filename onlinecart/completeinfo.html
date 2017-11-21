@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection" /> 
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<title>在线申请信用贷款</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/completeinfo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.custom-2.5.2.min.css"/>
+	</head>
+	<body>
+		<header>
+			<span class="line"></span>
+			<span class="line_m">完善信息，你可以获得更多贷款</span>
+			<span class="line"></span>
+		</header>
+		<div class="form_info">
+			<p>
+				<span class="form_infoleft">期望贷款：</span>
+				<input type="number" placeholder="期望贷款额" class="num" />
+				<span>元</span>
+			</p>
+			<p>
+				<span class="form_infoleft">您的生日:</span>
+				<input type="text" placeholder="您的生日" id="date" class="yourData"/>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft">名下房产：</span>
+				<span >
+					<span class="active commHouse form_comm ">有房贷</span>
+					<span class="commHouse form_comm ">有房无贷</span>
+					<span class="commHouse form_comm ">无房</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft">名下汽车：</span>
+				<span >
+					<span class="active commCar form_comm  ">有车贷</span>
+					<span class="commCar form_comm ">有车无贷</span>
+					<span class="commCar form_comm ">无车</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft" style="margin-right: 2vw;">公积金  ：</span>
+				<span >
+					<span class="active commfund form_comm  ">一年以内</span>
+					<span class="commfund form_comm ">一年以上</span>
+					<span class="commfund form_comm ">无公积金</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft"    >社会保险: </span>
+				<span  style="margin-left: 2vw;">
+					<span class="active commsocial form_comm  ">一年以内</span>
+					<span class="commsocial form_comm ">一年以上</span>
+					<span class="commsocial form_comm ">无社保</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft"    >您的职业: </span>
+				<span  style="margin-left: 2vw;">
+					<span class="commoccupation form_comm active ">白领</span>
+					<span class="commoccupation form_comm ">公务员</span>
+					<span class="commoccupation form_comm ">私营业主</span>
+				</span>
+			</p>
+			<p class="lineT"></p>
+			<!--弹框-->
+			<!--白领弹框-->
+			<div class="ccupation_tab whitecollar " style="display: block;">
+				<p class="whitecollar_img"><img src="img/up.png"/></p>
+				<p style="margin-top: 4vw;">
+				<span class="form_infoleft">工资发放：</span>
+				<span >
+					<span class="active commWages form_comm  ">银行转账</span>
+					<span class="commWages form_comm ">现金发放</span>
+
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft" style="margin-right: 2vw;">月收入  ：</span>
+				<span >
+					<span class="active commMoth form_comm  ">4千以下</span>
+					<span class="commMoth form_comm ">4千-1万</span>
+					<span class="commMoth form_comm ">一万以上</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft"    >工作时间: </span>
+				<span  style="margin-left: 2vw;">
+					<span class="active commTime form_comm  ">6个月内</span>
+					<span class="commTime form_comm ">12个月内</span>
+					<span class="commTime form_comm ">1年以上</span>
+				</span>
+			</p>
+			</div>
+			
+			<!--公务员弹框-->
+			<div class="ccupation_tab civilservant">
+				<p class="civilservant_img"><img src="img/up.png"/></p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft" style="margin-right: 2vw;">月收入  ：</span>
+				<span >
+					<span class="active commMoth form_comm  ">4千以下</span>
+					<span class="commMoth form_comm ">4千-1万</span>
+					<span class="commMoth form_comm ">一万以上</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft"    >工作时间: </span>
+				<span  style="margin-left: 2vw;">
+					<span class="active commTime form_comm  ">6个月内</span>
+					<span class="commTime form_comm ">12个月内</span>
+					<span class="commTime form_comm ">1年以上</span>
+				</span>
+			</p>
+			</div>
+			
+			<!--私企业主弹框-->
+			<div class="ccupation_tab Privatenterprise">
+				<p class="Privatenterprise_img"><img src="img/up.png"/></p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft" style="margin-right: 2vw;">月收入  ：</span>
+				<span >
+					<span class="active commMoth form_comm  ">4千以下</span>
+					<span class="commMoth form_comm ">4千-1万</span>
+					<span class="commMoth form_comm ">一万以上</span>
+				</span>
+			</p>
+			<p style="margin-top: 4vw;">
+				<span class="form_infoleft"    >营业执照: </span>
+				<span  style="margin-left: 2vw;">
+				
+					<span class="commTime form_comm  active">12个月内</span>
+					<span class="commTime form_comm ">1年以上</span>
+				</span>
+			</p>
+			</div>
+		    <p class="appaly">提交完成申请</p>
+			<p class="radio" style="margin-top: 3vw;">
+					<a class="agree ">现在申请，即可免费领取最高100万出行意外险</a>
+			</p>
+			<p style="margin: auto; margin-top:2vw;text-align: center;">我确定并了解本次<span class="redC">活动规则</span>及<span class="redC">信息安全说明</span></p>
+		</div>
+		<div class="tips">
+			<p>保险公司工作人员会致电您并向您解释产品详情</p>
+			<p>您提供的个人信息仅供本次活动使用，我们不会</p>
+			<p>泄露给任何第三方或其他用途</p>
+		</div>
+		
+	</body>
+	<script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mobiscroll.custom-2.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.commHouse').click(function(){
+ 	$('.commHouse').removeClass('active');
+	      $(this).addClass('active');
+	   });
+	   $('.commCar').click(function(){
+ 	$('.commCar').removeClass('active');
+	      $(this).addClass('active');
+	   });
+	      $('.commfund').click(function(){
+ 	$('.commfund').removeClass('active');
+	      $(this).addClass('active');
+	   });
+	    $('.commsocial').click(function(){
+ 	    $('.commsocial').removeClass('active');
+	      $(this).addClass('active');
+	    });
+	     $('.commoccupation').click(function(){
+ 	    $('.commoccupation').removeClass('active');
+	      $(this).addClass('active');
+	      var index = $(this).index();
+	       $('.ccupation_tab').css('display','none');
+	      $('.ccupation_tab').eq(index).css('display','block');
+	      
+	   });
+	   $('.agree').click(function(){
+ 	   $(this).toggleClass('checked');
+	   });
+	   
+	   $('.commWages').click(function(){
+ 	    $('.commWages').removeClass('active');
+	      $(this).addClass('active');
+	    });
+	     $('.commMoth').click(function(){
+ 	    $('.commMoth').removeClass('active');
+	      $(this).addClass('active');
+	   });
+	   $('.commTime').click(function(){
+ 	  $('.commTime').removeClass('active');
+	      $(this).addClass('active');
+	   });
+</script>
+	    <script type="text/javascript">
+	    	
+//初始化日期控件
+var now = new Date();
+var currYear = now.getFullYear();
+var currMonth = now.getMonth() + 1;
+var currDay = now.getDate();
+ 
+//mobiScroll插件选项
+var opt1 = {
+  preset : 'date', //日期，可选：date\datetime\time\tree_list\image_text\select
+  theme : 'android-ics light', //皮肤样式，可选：default\android\android-ics light\android-ics\ios\jqm\sense-ui\wp light\wp
+  display : 'modal', //显示方式 ，可选：modal\inline\bubble\top\bottom
+  mode : 'scroller', //日期选择模式，可选：scroller\clickpick\mixed
+  lang : 'zh',
+  dateFormat : 'yyyy-mm-dd', // 面板日期格式
+  setText : '确认', //确认按钮名称
+  cancelText : '取消', //取消按钮名籍我
+  dateOrder : 'yyyymmdd', //面板中日期排列格式
+  dayText : '日',
+  monthText : '月',
+  yearText : '年', //面板中年月日文字
+  showNow : false,
+  nowText : "今",
+  endYear: currYear +100, //结束年份
+  minDate: new Date(currYear-100, currMonth - 1, currDay+1),
+  onSelect:function(textVale,inst){ //选中时触发事件
+//  console.log("我被选中了.....");
+  },
+  onClose:function(textVale,inst){ //插件效果退出时执行 inst:表示点击的状态反馈：set/cancel
+//  console.log("textVale--"+textVale);
+//  console.log(this.id);//this表示调用该插件的对象
+  }
+};
+ 
+//时间面板显示日期
+$("#date").mobiscroll().date(opt1); 
+//面板显示时间
+$("#time").mobiscroll().time(opt1);
+ 
+function showTime(){
+alert($('#date').val());
+}
+
+	    </script>
+</html>

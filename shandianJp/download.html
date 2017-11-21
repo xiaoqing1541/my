@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://static.gogobids.com/other/deeplink.html -->
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>闪电拍卖</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-itunes-app" content="app-id=1189695140">
+		<link rel="stylesheet" href="./css/deeplink.css">
+	</head>
+
+	<body class="ios-safari">
+		<div class="tips">
+			<em></em>
+			<div>
+				若已安装闪电拍卖，
+			</div>
+			<div id="tipText">
+				请下拉页面点击「打开」
+			</div>
+		</div>
+		<div class="line">
+			还没安装APP？
+		</div>
+		<div class="logo"></div>
+		<a href="javascript:o(1);">打开APP</a>
+		<a href="javascript:d();">下载闪电拍卖</a>
+		<script>
+			function o(o) {
+				if(ua.match(/android/i))
+					ua.match(/micromessenger/i) && (bd.classList.add("android-wv"), txt.innerHTML = "请点击右上角用浏览器打开"), doc.location = "gogobids://", setTimeout(function() {
+						doc.location = "intent://scan/#Intent;scheme=gogobids;package=com.gogobids.flash;end"
+					}, 150);
+				else if(ua.match(/iphone|ipod|ipad/i) && (ua.match(/micromessenger/i) ? (bd.classList.add("ios-wv"), txt.innerHTML = "请点击右上角用「Safari」打开") : ua.match(/Version.+Safari/i) && (bd.classList.add("ios-safari"), txt.innerHTML = "请下拉页面点击「打开」"), o))
+					if(ua.match(/os [0-8]_\d[_\d]* like mac os/i)) {
+						var e = doc.createElement("iframe");
+						e.src = "gogobids://", e.style.display = "none", doc.body.appendChild(e), setTimeout(function() {
+							doc.body.removeChild(e)
+						}, 3e3)
+					} else
+						doc.location = "gogobids://"
+			}
+
+			function d() {
+				doc.location = "https://ad.gogobids.com/addata/download?extend_id=" + (sessionStorage.extend || "2") + (localStorage.sessionid ? "&user_session_id=" + localStorage.sessionid : "") + (localStorage.uuid ? "&uuid=" + localStorage.uuid : "")
+			}
+
+			var ua = navigator.userAgent.toLowerCase(),
+				doc = document,
+				bd = doc.querySelector("body"),
+				txt = doc.getElementById("tipText");
+			o()
+		</script>
+	</body>
+
+</html>

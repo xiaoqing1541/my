@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection" /> 
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<title>在线申请信用贷款</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/submit.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/head.png"/>
+		</header>
+		<div class="types">
+			<p class="types_top">我们将为您推荐以下几家贷款机构，贷款成功率高达<span class="red">90%</span></p>
+			<ul class="types_list">
+				<li>
+					<span ><img src="img/listBf.png" class="listImg"/></span>
+					<span class="list_mid">
+						<p class="listname">魔法现金-极速贷</p>
+						<p class="list_time">最快一天放款</p>
+					</span>
+					<span class="list_right">
+						<p class="estimate">预估放款</p>
+						<p class="money">12万元</p>
+					</span>
+					<span class="backRight"><img src="img/right.png" /></span>
+				</li>
+				<li>
+					<span ><img src="img/listBf.png" class="listImg"/></span>
+					<span class="list_mid">
+						<p class="listname">魔法现金-极速贷</p>
+						<p class="list_time">最快一天放款</p>
+					</span>
+					<span class="list_right">
+						<p class="estimate">预估放款</p>
+						<p class="money">12万元</p>
+					</span>
+					<span class="backRight"><img src="img/right.png" /></span>
+				</li>
+				<li>
+					<span ><img src="img/listBf.png" class="listImg"/></span>
+					<span class="list_mid">
+						<p class="listname">魔法现金-极速贷</p>
+						<p class="list_time">最快一天放款</p>
+					</span>
+					<span class="list_right">
+						<p class="estimate">预估放款</p>
+						<p class="money">12万元</p>
+					</span>
+					<span class="backRight"><img src="img/right.png" /></span>
+				</li>
+			</ul>
+		</div>
+	
+		<div class="institution">
+			<p class="institution_top" style="margin-top: 4vw;">根据您的条件，以下<span class="red">贷款机构</span>也可能会联系您</p>
+			<div class="institution_type">
+			 <p class="typeslist">
+			 	<a href=""><img src="img/institution_type_08.png"/></a>
+			 	<a  href=""><img src="img/institution_type_11.png"/></a>
+			 	<a  href=""><img src="img/institution_type_14.png"/></a>
+			 </p>
+			 <p class="typeslist">
+			 	<a  href=""><img src="img/institution_type_30.png"/></a>
+			 	<a  href=""><img src="img/institution_type_33.png"/></a>
+			 	<a  href=""><img src="img/institution_type_36.png"/></a>
+			 </p>
+			</div>
+		</div>
+		
+		<p class="myapp">
+				<img src="img/footer.png"/>
+		</p>
+		<!--遮罩保险-->
+		<div class="mark">
+			<div class="lucyPack">
+				<div class="get">
+					<img src="img/get.png"/>
+				</div>
+				<div class="close">
+					<img src="img/close.png"/>
+				</div>
+			</div>
+		</div>
+		<!--确认领取-->
+		<div class="mark1">
+			<div class="sureB">
+				<p class="bclose"><img src="img/yuuan.png"/></p>
+				<div class="sureB_top">
+					<p>您的贷款申请已提交</p>
+					<p style="margin-top: 2vw;">恭喜您额外获得￥3000元现金贷款~</p>
+				</div>
+				<p class="now">
+					<a href="">点击立刻领取现金</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			$('.close').click(function(){
+				$('.mark').fadeOut();
+			});
+			$('.get').click(function(){
+				$('.mark').fadeOut();
+						setTimeout(function(){
+					   $('.mark1').fadeIn();
+				      },500);
+			});
+			$('.bclose').click(function(){
+				$('.mark1').fadeOut();
+			});
+		})
+	</script>
+</html>

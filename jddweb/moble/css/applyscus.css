@@ -1,0 +1,30 @@
+.tips{
+	margin: 6vw auto;
+	text-align: center;
+	font-size: 1.0em;
+	white-space: nowrap;
+}
+.tips img{
+	max-width: 20%;
+	height: auto;
+}
+.commcode{
+	margin: auto;
+	text-align: center;
+}
+.commcode img{
+    max-width: 70vw;
+	height: auto;
+}
+.backOne{
+	margin: 6vw auto;
+	text-align: center;
+	width: 40vw;
+	display: block;
+	height: 8vw;
+	line-height: 8vw;
+	border: 1px solid #01a3fd;
+	color: #01a3fd;
+	border-radius:18px ;
+	-webkit-border-radius:18px ;
+}
